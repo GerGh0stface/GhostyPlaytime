@@ -1,0 +1,110 @@
+# ============================================================
+#   GhostyPlaytime - Deutsche Sprachdatei
+#   Platzhalter / Placeholders:
+#     %player%   - Spielername / Player name
+#     %time%     - Formatierte Spielzeit / Formatted playtime
+#     %rank%     - Rang des Spielers / Player rank
+#     %page%     - Aktuelle Seite / Current page
+#     %max_page% - Maximale Seite / Max page
+# ============================================================
+
+prefix: '&8[&bGhostyPlaytime&8] &r'
+
+plugin-enabled: 'GhostyPlaytime wurde aktiviert!'
+plugin-disabled: 'GhostyPlaytime wurde deaktiviert!'
+plugin-reloaded: '&aPlugin wurde erfolgreich neu geladen!'
+
+no-permission: '&cDu hast keine Berechtigung fuer diesen Befehl!'
+player-only: '&cDieser Befehl kann nur von Spielern ausgefuehrt werden!'
+player-not-found: '&cSpieler &e%player% &cwurde nicht gefunden!'
+invalid-number: '&cUngueltige Zahl: &e%input%'
+invalid-usage: '&cFalsche Verwendung! &7%usage%'
+
+# Zeitformatierung / Time formatting
+time-format:
+  days: '%d%T'
+  hours: '%d%h'
+  minutes: '%d%m'
+  seconds: '%d%s'
+  day-suffix: 'T'
+  hour-suffix: 'h'
+  minute-suffix: 'm'
+  second-suffix: 's'
+
+# Admin-Nachrichten / Admin messages
+admin:
+  playtime-set: '&aSpieler &e%player% &aSpielzeit wurde auf &e%time% &agesetzt!'
+  playtime-added: '&e%time% &awurde zur Spielzeit von &e%player% &ahinzugefuegt!'
+
+# ============================================================
+#   Spieler-GUI / Player GUI
+# ============================================================
+gui:
+  player:
+    title: '&8» &bMeine Spielzeit &8«'
+    own-head:
+      name: '&b&l%player%'
+      lore:
+        - '&7━━━━━━━━━━━━━━━━'
+        - '&7Spielzeit: &b%time%'
+        - '&7Rang: &b#%rank%'
+        - '&7━━━━━━━━━━━━━━━━'
+    top-label:
+      name: '&e&l⭐ TOP SPIELER ⭐'
+      lore:
+        - '&7Die aktivsten Spieler des Servers'
+    top-head:
+      name: '&6#%rank% &e%player%'
+      lore:
+        - '&7━━━━━━━━━━━━━━━━'
+        - '&7Spielzeit: &e%time%'
+        - '&7━━━━━━━━━━━━━━━━'
+    close:
+      name: '&c&lSchliessen'
+      lore:
+        - '&7Klicke zum Schliessen'
+
+  # ============================================================
+  #   Admin-GUI / Admin GUI
+  # ============================================================
+  admin:
+    title: '&8» &cAdmin &7- &bSpielzeit &8«'
+    all-title: '&8» &bAlle Spielzeiten &8«'
+    player-head:
+      name: '&b%player%'
+      lore:
+        - '&7━━━━━━━━━━━━━━━━'
+        - '&7Spielzeit: &b%time%'
+        - '&7Rang: &b#%rank%'
+        - '&7━━━━━━━━━━━━━━━━'
+        - '&7Klicke fuer Details'
+    detail-head:
+      name: '&b&l%player%'
+      lore:
+        - '&7━━━━━━━━━━━━━━━━'
+        - '&7Spielzeit: &b%time%'
+        - '&7Rang: &b#%rank%'
+        - '&7Status: &b%status%'
+        - '&7━━━━━━━━━━━━━━━━'
+    status-online: '&aOnline'
+    status-offline: '&cOffline'
+    prev-page:
+      name: '&e&l◀ Vorherige Seite'
+      lore:
+        - '&7Seite &e%page%&7/&e%max_page%'
+    next-page:
+      name: '&e&lNaechste Seite ▶'
+      lore:
+        - '&7Seite &e%page%&7/&e%max_page%'
+    page-info:
+      name: '&7Seite &e%page%&7/&e%max_page%'
+      lore:
+        - '&7Gesamt: &e%total% &7Spieler'
+    back:
+      name: '&e&l◀ Zurueck'
+      lore:
+        - '&7Zurueck zur Liste'
+    close:
+      name: '&c&lSchliessen'
+      lore:
+        - '&7Klicke zum Schliessen'

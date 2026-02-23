@@ -1,0 +1,30 @@
+name: GhostyPlaytime
+version: '${project.version}'
+main: ghostyplaytime.GhostyPlaytime
+api-version: '1.21'
+description: Track and display player playtime with a stylish GUI
+author: Ger_Gh0stface
+
+commands:
+  playtime:
+    description: Zeigt deine Spielzeit an / Shows your playtime
+    usage: /playtime
+    permission: ghostyplaytime.playtime
+  playtimeadmin:
+    description: Admin-Befehl fuer Spielzeit / Admin command for playtime
+    usage: /playtimeadmin [reload|set <Spieler> <Sekunden>|add <Spieler> <Sekunden>|<Spieler>]
+    permission: ghostyplaytime.admin
+
+permissions:
+  ghostyplaytime.playtime:
+    description: Erlaubt die Nutzung von /playtime
+    default: true
+  ghostyplaytime.admin:
+    description: Erlaubt die Nutzung von /playtimeadmin
+    default: op
+  ghostyplaytime.*:
+    description: Alle GhostyPlaytime-Berechtigungen
+    default: op
+    children:
+      ghostyplaytime.playtime: true
+      ghostyplaytime.admin: true

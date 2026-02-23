@@ -1,0 +1,110 @@
+# ============================================================
+#   GhostyPlaytime - English Language File
+#   Placeholders:
+#     %player%   - Player name
+#     %time%     - Formatted playtime
+#     %rank%     - Player rank
+#     %page%     - Current page
+#     %max_page% - Max page
+# ============================================================
+
+prefix: '&8[&bGhostyPlaytime&8] &r'
+
+plugin-enabled: 'GhostyPlaytime has been enabled!'
+plugin-disabled: 'GhostyPlaytime has been disabled!'
+plugin-reloaded: '&aPlugin successfully reloaded!'
+
+no-permission: '&cYou do not have permission for this command!'
+player-only: '&cThis command can only be executed by players!'
+player-not-found: '&cPlayer &e%player% &cwas not found!'
+invalid-number: '&cInvalid number: &e%input%'
+invalid-usage: '&cWrong usage! &7%usage%'
+
+# Time formatting
+time-format:
+  days: '%d%T'
+  hours: '%d%h'
+  minutes: '%d%m'
+  seconds: '%d%s'
+  day-suffix: 'd'
+  hour-suffix: 'h'
+  minute-suffix: 'm'
+  second-suffix: 's'
+
+# Admin messages
+admin:
+  playtime-set: '&aPlaytime of &e%player% &ahas been set to &e%time%&a!'
+  playtime-added: '&e%time% &ahas been added to &e%player%&a''s playtime!'
+
+# ============================================================
+#   Player GUI
+# ============================================================
+gui:
+  player:
+    title: '&8» &bMy Playtime &8«'
+    own-head:
+      name: '&b&l%player%'
+      lore:
+        - '&7━━━━━━━━━━━━━━━━'
+        - '&7Playtime: &b%time%'
+        - '&7Rank: &b#%rank%'
+        - '&7━━━━━━━━━━━━━━━━'
+    top-label:
+      name: '&e&l⭐ TOP PLAYERS ⭐'
+      lore:
+        - '&7The most active players on the server'
+    top-head:
+      name: '&6#%rank% &e%player%'
+      lore:
+        - '&7━━━━━━━━━━━━━━━━'
+        - '&7Playtime: &e%time%'
+        - '&7━━━━━━━━━━━━━━━━'
+    close:
+      name: '&c&lClose'
+      lore:
+        - '&7Click to close'
+
+  # ============================================================
+  #   Admin GUI
+  # ============================================================
+  admin:
+    title: '&8» &cAdmin &7- &bPlaytime &8«'
+    all-title: '&8» &bAll Playtimes &8«'
+    player-head:
+      name: '&b%player%'
+      lore:
+        - '&7━━━━━━━━━━━━━━━━'
+        - '&7Playtime: &b%time%'
+        - '&7Rank: &b#%rank%'
+        - '&7━━━━━━━━━━━━━━━━'
+        - '&7Click for details'
+    detail-head:
+      name: '&b&l%player%'
+      lore:
+        - '&7━━━━━━━━━━━━━━━━'
+        - '&7Playtime: &b%time%'
+        - '&7Rank: &b#%rank%'
+        - '&7Status: &b%status%'
+        - '&7━━━━━━━━━━━━━━━━'
+    status-online: '&aOnline'
+    status-offline: '&cOffline'
+    prev-page:
+      name: '&e&l◀ Previous Page'
+      lore:
+        - '&7Page &e%page%&7/&e%max_page%'
+    next-page:
+      name: '&e&lNext Page ▶'
+      lore:
+        - '&7Page &e%page%&7/&e%max_page%'
+    page-info:
+      name: '&7Page &e%page%&7/&e%max_page%'
+      lore:
+        - '&7Total: &e%total% &7players'
+    back:
+      name: '&e&l◀ Back'
+      lore:
+        - '&7Back to the list'
+    close:
+      name: '&c&lClose'
+      lore:
+        - '&7Click to close'
