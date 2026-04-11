@@ -11,7 +11,7 @@ By downloading, installing, or using this plugin (“Software”), you agree to 
 >> 1. Usage
 
 * You are allowed to download the Plugin. 
-* You are not allowed to install, and use this plugin on your own Minecraft server(s), whether private or public. Its only allowed when you buy the Plugin on BuiltbyBit!
+* You are allowed to install, and use this plugin on your own Minecraft server(s), whether private or public.
 * You may modify the **existing plugin files** to suit your server’s needs (config files, language files, etc.).
 
 >> 2. Restrictions
